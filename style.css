@@ -10,7 +10,6 @@ html, body {
 
 .flex-container {
     background: #000b2a;
-    /*background: linear-gradient(to right, #000109 1%,#000b2a 30%,#002d6f 53%,#000924 73%);*/
     width: 100%;
     height: 95px;
     display: flex;
@@ -35,11 +34,6 @@ html, body {
 .banner {
     width: 100%;
     height: 530px;
-}
-.logo{
-    width: 100px;
-    height: 120px;
-    padding: 10px;
 }
 
 .inovacoes h1 {
@@ -67,6 +61,8 @@ html, body {
 }
 .lembrete a {
     text-decoration: none;
+    background: #00CCCC;
+    border-radius: 20%;
     color:#000b2a;
     font-size: 25px;
     font-weight: bold;
@@ -138,4 +134,63 @@ html, body {
     width: 70%;
     margin: 0 auto;
     padding: 20px;
+}
+
+@media all and (max-width: 768px) {
+    .flex-container {
+        width: 100%;
+        height: 220px;
+        text-align: center;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu a {
+        padding: 10px;
+        font-size: 25px;
+    }
+    .banner {
+        width: 100%;
+        height: 385px;
+    }
+    .inovacoes h1 {
+        padding: 30px;
+        text-align: center;
+        font-size: 40px;
+        color: #000b2a;
+    }
+    .inovacoes h3 {
+        font-size: 20px;
+        color: #00226c;
+        margin: 0 auto;
+        text-align: justify;
+        padding: 30px;
+    }
+    .lembrete p{
+        color: #00226c;
+        font-size: 20px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .card {
+        padding: 0px 10px;
+        width: 90%;
+    }
+    .news {
+        width: 90%;
+    }
+    .about h1 {
+        font-size: 40px;
+    }
+    .about h3, ul li {
+        font-size: 25px;
+        color: #00226c;
+        text-align: justify;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
