@@ -9,6 +9,7 @@ html, body {
 }
 
 .flex-container {
+    position: fixed;
     background: #000b2a;
     width: 100%;
     height: 95px;
@@ -18,6 +19,7 @@ html, body {
 }
 
 .menu {
+    position: relative;
     display: flex;
 }
 
@@ -33,7 +35,8 @@ html, body {
 
 .banner {
     width: 100%;
-    height: 530px;
+    height: 535px;
+    margin-top: 90px;
 }
 
 .inovacoes h1 {
@@ -90,11 +93,13 @@ html, body {
     font-size: 20px;
 }
 
+.noticia {
+    background-color: #00CCCC;
+}
 .news {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #00CCCC;
     color:  #000b2a;
 }
 .news h1 {
@@ -110,11 +115,13 @@ html, body {
 }
 
 .news a {
-    margin-left: 10px;
     text-decoration: none;
-    color: #ffffff;
+    background: #000b2a;
+    border-radius: 20%;
+    color: #00CCCC;
+    font-size: 25px;
     font-weight: bold;
-    cursor: pointer;
+    margin-left: 10px;
 }
 
 .news p {
@@ -141,6 +148,7 @@ html, body {
         width: 100%;
         height: 220px;
         text-align: center;
+        position: fixed;
     }
     .menu {
         width: 100%;
@@ -152,8 +160,7 @@ html, body {
         font-size: 25px;
     }
     .banner {
-        width: 100%;
-        height: 385px;
+        display: none;
     }
     .inovacoes h1 {
         padding: 30px;
@@ -179,6 +186,7 @@ html, body {
         padding: 0px 10px;
         width: 90%;
     }
+    
     .news {
         width: 90%;
     }
